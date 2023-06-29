@@ -64,7 +64,7 @@ export default function MarkupComponent(props: any) {
       <div className={s.data}>
         <div>{props.name}</div>
 
-        <div>{isShowNav && 0}</div>
+        <div></div>
       </div>
     </div>
   );

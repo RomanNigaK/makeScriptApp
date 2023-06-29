@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import s from "./Menu.module.scss";
 import addTab from "@public/image/ico/addTab.svg";
 import menu from "@public/image/ico/menu.svg";
-import alignComponents from "@public/image/ico/alignComponents.svg";
+
 import clearCanvasIco from "@public/image/ico/clearCanvas.svg";
 import saveScriptIco from "@public/image/ico/save.svg";
 import deleteCanvasIco from "@public/image/ico/deleteCanvas.svg";
-import { useAppDispatch, useAppSelector } from "hooks/redux.hook";
-import { selectorCanvas, selectorCurrentCanvas } from "redux/selectors";
+import { useAppDispatch } from "hooks/redux.hook";
+
 import {
   Canvas,
   clearCanvas,
@@ -15,7 +15,6 @@ import {
   editNameScript,
   loadServerFile,
   newCanvas,
-  saveScript,
   setCurrentCanvas,
 } from "redux/slice/canvas.slice";
 import { setMessage } from "redux/slice/message.slice";
@@ -72,12 +71,12 @@ export default function Menu({ canvas, currentCanvasId }: IPropsMenu) {
         />
         {isShowMenu && (
           <div className={s.itemsMenu}>
-            <div>
+            {/* <div>
               <div>
                 <img src={alignComponents} alt="" />
               </div>
               <div>Выровнять</div>
-            </div>
+            </div> */}
             <div>
               <div onClick={() => dispatch(deleteCanvas())}>
                 <img src={deleteCanvasIco} alt="" />

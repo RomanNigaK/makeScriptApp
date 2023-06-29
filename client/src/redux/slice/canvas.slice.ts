@@ -322,6 +322,7 @@ const canvasSlice = createSlice({
     setCurrentCanvas: (state, action) => {
       const id = action.payload;
       state.currentCanvasId = id;
+      state.currentComponent = null;
     },
     editNameScript: (state, action) => {
       const { id, name } = action.payload;
