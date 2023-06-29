@@ -1,0 +1,31 @@
+.message {
+  background: green;
+  position: absolute;
+  width: 400px;
+  height: 60px;
+  opacity: 1;
+
+  animation-name: showMessage;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+
+  > div {
+    width: inherit;
+    height: inherit;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+}
+
+@keyframes showMessage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

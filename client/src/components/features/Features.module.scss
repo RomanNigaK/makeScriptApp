@@ -1,0 +1,18 @@
+.features {
+  .header {
+    height: 40px;
+    width: inherit;
+    background-color: #2fa1f3;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+  }
+  > div.content {
+    padding: 10px;
+
+    flex-wrap: wrap;
+    > div {
+      margin: 5px;
+    }
+  }
+}

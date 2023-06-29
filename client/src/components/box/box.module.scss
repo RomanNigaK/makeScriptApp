@@ -1,0 +1,55 @@
+.box {
+  width: 220px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #fff;
+  cursor: move;
+  > div.header {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px 4px 0px 0px;
+    //Иконка и наименование
+    > div {
+      display: flex;
+      align-items: center;
+    }
+    > div:first-child {
+      align-items: center;
+      justify-content: flex-start;
+      > div {
+        display: flex;
+        align-items: center;
+        margin-left: 5px;
+      }
+    }
+    > div:last-child {
+      justify-content: flex-end;
+      > div {
+        margin-right: 5px;
+      }
+    }
+  }
+  > div.data {
+    display: flex;
+    > div {
+      height: 40px;
+      display: flex;
+      align-items: center;
+    }
+    > div:first-child {
+      margin-left: 5px;
+    }
+    > div:last-child {
+      margin-left: auto;
+      align-items: flex-end;
+      margin-right: 5px;
+    }
+  }
+}
+
+.active {
+  box-shadow: 0px 0px 10px 5px rgba(255, 0, 0, 0.8);
+}

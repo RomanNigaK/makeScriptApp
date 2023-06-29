@@ -1,0 +1,19 @@
+.availableComponents {
+  .header {
+    height: 40px;
+    background-color: #2fa1f3;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+  }
+  > div.content {
+    padding: 10px;
+    height: 230px;
+
+    overflow-y: auto;
+
+    > div {
+      margin: 5px;
+    }
+  }
+}

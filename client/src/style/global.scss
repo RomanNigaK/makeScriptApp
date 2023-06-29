@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "PT-Serif";
+  src: url("./fonts/PT_Serif/PTSerif-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  font-family: "PT-Serif";
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 10px;
+  background: #e8e7e7;
+}
+input {
+  border: none;
+  background-color: transparent;
+}
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  font-size: 0.8em;
+}
+
+*,
+html * /* override x.xhtml.ru style */ {
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff #2c3a6c;
+}
+
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar {
+  height: 7px;
+  width: 7px;
+}
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb {
+  background-color: #2fa1f3;
+
+  border: 1px solid #fcfcfc;
+}
+
+/* this stuff below doesn't
+   affect scrollbar styling */
+html {
+  background: lightgrey;
+  overflow: hidden;
+}

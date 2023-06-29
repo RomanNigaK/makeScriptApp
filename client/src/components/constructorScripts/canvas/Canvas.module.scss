@@ -1,0 +1,10 @@
+.canvas {
+  height: 100%;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  > div {
+    position: absolute;
+    height: inherit;
+  }
+}

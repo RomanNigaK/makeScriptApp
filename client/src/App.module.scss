@@ -1,0 +1,30 @@
+.app {
+  display: grid;
+  grid-template-areas:
+    "components scripts"
+    "options scripts";
+  grid-template-columns: 300px auto;
+  grid-template-rows: 300px auto;
+  height: 97vh;
+
+  > div {
+    background-color: #fff;
+  }
+}
+
+.components {
+  grid-area: components;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.options {
+  grid-area: options;
+  margin-right: 10px;
+  width: inherit;
+}
+
+.scripts {
+  grid-area: scripts;
+  min-height: 700px;
+}

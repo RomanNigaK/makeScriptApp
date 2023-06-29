@@ -1,0 +1,73 @@
+.menu {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  height: inherit;
+  > div {
+    display: flex;
+    align-items: center;
+  }
+
+  > div.tabCanvas {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 20px;
+    > div {
+      height: 30px;
+
+      padding-left: 10px;
+      padding-right: 10px;
+      color: #fff;
+      margin-bottom: -10px;
+      border-radius: 10px 0px 0px 0px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      > div:last-child {
+        margin-left: 5px;
+      }
+    }
+
+    > div.active {
+      background-color: #fff;
+      color: black;
+    }
+  }
+
+  > div.options {
+    margin-left: auto;
+    cursor: pointer;
+  }
+}
+
+.itemsMenu {
+  z-index: 999;
+  position: absolute;
+  width: 350px;
+  height: 100px;
+  background-color: #2fa1f3;
+  margin-left: -320px;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  > div {
+    > div {
+      text-align: center;
+      color: #fff;
+    }
+    > div:first-child {
+      img {
+        cursor: pointer;
+        &:hover {
+          box-shadow: (2px 2px 25px #fff);
+        }
+      }
+    }
+  }
+}

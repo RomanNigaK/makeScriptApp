@@ -1,0 +1,23 @@
+.deleteCompCanvas {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  opacity: 1;
+  border: 1px solid #949494;
+  background-image: url("./media/deleteComp.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  animation-name: show;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

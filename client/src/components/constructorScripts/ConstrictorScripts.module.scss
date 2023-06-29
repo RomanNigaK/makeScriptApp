@@ -1,0 +1,30 @@
+.constructorScripts {
+  display: grid;
+  grid-template-areas:
+    "menu"
+    "canvas";
+
+  grid-template-rows: 40px auto;
+  height: 97vh;
+}
+
+.menu {
+  grid-area: menu;
+  background-color: #2fa1f3;
+  height: 40px;
+}
+.canvas {
+  grid-area: canvas;
+  position: relative;
+}
+
+.message {
+  width: 500px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: rgba(152, 152, 152, 0.5);
+  margin-top: 100px;
+}
