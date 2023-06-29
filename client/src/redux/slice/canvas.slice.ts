@@ -318,6 +318,7 @@ const canvasSlice = createSlice({
         variables: [],
         components: [],
       });
+      state.currentComponent = null;
     },
     setCurrentCanvas: (state, action) => {
       const id = action.payload;
